@@ -9,7 +9,8 @@ namespace Lisätehtävä_5._0
         static Random rnd = new Random();
         //tehdään ruudukko
         static int[] LaivaKoot = { 2, 2, 4, 5 };
-        public static int[,] Ruudukko = new int[10, 10] { { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 },
+        public static int[,] Ruudukko = new int[10, 10] {
+        { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 },
         { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 },
         { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 },
         { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 },
@@ -121,9 +122,9 @@ namespace Lisätehtävä_5._0
             {   //yritetään uudestaan kunnes tulee ruutu johon ei ole kertaakaan ammuttu
                 if (Ruudukko[xCor, yCor] == 2)
                 {
-                    Console.WriteLine("Anna y Koordinaatti: ");
+                    Console.WriteLine("Anna x Koordinaatti: ");
                     xCor = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Anna x koordinaatti: ");
+                    Console.WriteLine("Anna y koordinaatti: ");
                     yCor = Convert.ToInt32(Console.ReadLine());
                 }
                 else
